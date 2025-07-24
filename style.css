@@ -37,7 +37,7 @@ th, td {
 
 td ul {
   margin: 0;
-  padding: 0;
+  padding: 0 0.5em;
 }
 
 @media (max-width: 600px) {
