@@ -15,7 +15,7 @@ a:hover {
 }
 
 /* Section and "card" styling */
-.about-section, .section {
+.about-section {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -42,6 +42,10 @@ a:hover {
   object-fit: cover;
   border: 3px solid #007acc;
   background: #f7f9fa;
+}
+
+.projects-heading {
+  padding-left: 8px;
 }
 
 h1 {
