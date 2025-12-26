@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lukas Daugaard Schröder – AI & Full Stack Engineer</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lukas Daugaard Schröder – AI & Full Stack Engineer</title>
+  
+  <meta name="description" content="Portfolio of Lukas Daugaard Schröder - AI & Full Stack Engineer specializing in Agentic AI, .NET, Semantic Kernel, and Deep Learning.">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
   <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
@@ -14,123 +19,202 @@
   <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-<div class="about-section">
+
+<header class="about-section">
   <div class="about-text">
     <h1>Lukas Daugaard Schröder</h1>
-    <p>I am an <strong>AI & Full Stack Engineer</strong> dedicated to bridging the gap between advanced deep learning research and robust, production-grade software architecture.</p>
+    <p class="intro">I am an <strong>AI & Full Stack Engineer</strong> dedicated to bridging the gap between advanced deep learning research and robust, production-grade software architecture.</p>
     <p>With a Master's degree in AI (Distinction) and years of enterprise experience, I combine rigorous academic insight with industry-hardened engineering skills to build scalable, intelligent systems.</p>
-    <p>For in-depth information about my career, education and IT skills please visit my LinkedIn profile: <a href="https://www.linkedin.com/in/lukas-daugaard-schroeder">https://www.linkedin.com/in/lukas-daugaard-schroeder</a></p>
-  <h2>Languages</h2>
-  <ul>
-    <li>Danish: Native speaker</li>
-    <li>German: Native speaker</li>
-    <li>English: Fluent</li>
-    <li>Italian: Conversational</li>
-  </ul>
+    
+    <div class="contact-links">
+      <a href="https://www.linkedin.com/in/lukas-daugaard-schroeder" target="_blank" class="btn-linkedin">
+        View LinkedIn Profile
+      </a>
+    </div>
+
+    <h2>Languages</h2>
+    <ul class="language-list">
+      <li><strong>Danish:</strong> Native</li>
+      <li><strong>German:</strong> Native</li>
+      <li><strong>English:</strong> Fluent</li>
+      <li><strong>Italian:</strong> Conversational</li>
+    </ul>
   </div>
+
   <img src="portrait.png" alt="Portrait of Lukas Daugaard Schröder" class="about-image"/>
+
   <div class="tech-stack">
     <h2>Tech Stack</h2>
-   <p><strong>AI/ML:</strong> Microsoft Semantic Kernel, OpenAI API, Python, Pandas, PyTorch, LLMs (Fine-tuning)</p>
-    <p><strong>Engineering:</strong> ASP.NET Core, React/Vue, SQL Server, Docker, Jenkins</p> 
+    <p><strong>AI/ML:</strong> Microsoft Semantic Kernel, OpenAI API, Python, Pandas, PyTorch, LLMs (Fine-tuning)</p>
+    <p><strong>Engineering:</strong> .NET 8, ASP.NET Core, React/Vue, SQL Server, Docker, Jenkins</p> 
   </div>
-</div>
-<h2 class="projects-heading">Projects</h2>
-<table>
-  <tr>
-    <th>Project Title</th>
-    <th>Dates</th>
-    <th>Role</th>
-    <th>Technologies</th>
-    <th>Description</th>
-    <th>Link</th>
-  </tr>
-  <tr>
-    <td>Agentic Customer Contact Copilot</td>
-    <td>Dec 2025</td>
-    <td>AI Software Engineer</td>
-    <td>.NET 8, Semantic Kernel, OpenAI (GPT-4o), REST</td>
-    <td>
-      <ul>
-        <li>Designed an autonomous AI agent for handling complex utility customer emails</li>
-        <li>Implemented stateful orchestration for mixed intents (e.g., Meter Reading + Product Questions)</li>
-        <li>Built strict JSON-schema extraction logic to prevent LLM hallucinations</li>
-        <li>Developed 3-point authentication flows and business logic validation</li>
+</header>
+
+<main>
+  <h2 class="section-title">Projects</h2>
+  
+  <div class="projects-grid">
+
+    <article class="project-card featured">
+      <div class="card-header">
+        <h3>Agentic Customer Contact Copilot</h3>
+        <span class="date">Dec 2025</span>
+      </div>
+      <p class="role">Role: <strong>AI Software Engineer</strong></p>
+      
+      <div class="tech-tags">
+        <span>.NET 8</span>
+        <span>Semantic Kernel</span>
+        <span>OpenAI (GPT-4o)</span>
+        <span>REST</span>
+      </div>
+
+      <ul class="description">
+        <li>Designed an autonomous AI agent for handling complex utility customer emails.</li>
+        <li>Implemented stateful orchestration for mixed intents (e.g., Meter Reading + Product Questions).</li>
+        <li>Built strict JSON-schema extraction logic to prevent LLM hallucinations.</li>
+        <li>Developed 3-point authentication flows and business logic validation.</li>
       </ul>
-    </td>
-    <td><em>Private Repository (Code available upon request)</em></td>
-  </tr>
-  <tr>
-    <td>Master's Thesis: Foundation Models for Genomics</td>
-    <td>Mar 2025 - Sep 2025</td>
-    <td>AI Researcher</td>
-    <td>PyTorch, Hugging Face, Python, LoRA, LLMs (Evo)</td>
-    <td>
-      <ul>
-        <li>Fine-tuned the "Evo" foundation model for CRISPR array detection</li>
-        <li>Implemented Low-Rank Adaptation (LoRA) for efficient optimization on constrained hardware</li>
-        <li>Designed end-to-end detection pipelines for DNA sequence classification</li>
-        <li><strong>Awarded highest distinction (1.0)</strong></li>
-        <li><em>Research paper currently in preparation with University of Freiburg</em></li>
+      
+      <div class="card-footer">
+        <span class="private-repo">🔒 Private Repository (Code available upon request)</span>
+      </div>
+    </article>
+
+    <article class="project-card featured">
+      <div class="card-header">
+        <h3>Master's Thesis: Foundation Models</h3>
+        <span class="date">Mar 2025 - Sep 2025</span>
+      </div>
+      <p class="role">Role: <strong>AI Researcher</strong></p>
+
+      <div class="tech-tags">
+        <span>PyTorch</span>
+        <span>Hugging Face</span>
+        <span>Python</span>
+        <span>LoRA</span>
+        <span>LLMs (Evo)</span>
+      </div>
+
+      <ul class="description">
+        <li>Fine-tuned the "Evo" foundation model for CRISPR array detection.</li>
+        <li>Implemented Low-Rank Adaptation (LoRA) for efficient optimization on constrained hardware.</li>
+        <li>Designed end-to-end detection pipelines for DNA sequence classification.</li>
+        <li><strong>Awarded highest distinction (1.0).</strong></li>
+        <li><em>Research paper currently in preparation with University of Freiburg.</em></li>
       </ul>
-    </td>
-    <td><em>Abstract available upon request (Full thesis under publication embargo)</em></td>
-  </tr>
-  <tr>
-    <td>Workout Schedule and Weight Tracking Microservice System</td>
-    <td>Jul 2025</td>
-    <td>Full Stack Developer</td>
-    <td>Angular, Flutter, Spring Boot, gRPC, REST</td>
-    <td>
-      <ul>
-        <li>Developed Flutter mobile app</li>
-        <li>Developed weight tracking website</li>
+
+      <div class="card-footer">
+        <span class="private-repo">📄 Abstract available upon request (Full thesis under publication embargo)</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="card-header">
+        <h3>Workout & Weight Microservices</h3>
+        <span class="date">Jul 2025 - Present</span>
+      </div>
+      <p class="role">Role: <strong>Full Stack Developer</strong></p>
+
+      <div class="tech-tags">
+        <span>Angular</span>
+        <span>Flutter</span>
+        <span>Spring Boot</span>
+        <span>gRPC</span>
+      </div>
+
+      <ul class="description">
+        <li>Developed Flutter mobile app for workout tracking.</li>
+        <li>Developed comprehensive weight tracking website.</li>
+        <li>Implemented microservice architecture using gRPC.</li>
       </ul>
-    </td>
-    <td><a href="https://github.com/LukasDS/lds-workout-system">https://github.com/LukasDS/lds-workout-system</a></td>
-  </tr>
-  <tr>
-    <td>Distributed Real-time Lambda Streaming Processing Pipeline</td>
-    <td>Apr 2023 - May 2023</td>
-    <td>Spark Developer</td>
-    <td>Spark (PySpark), Kafka, Docker</td>
-    <td>
-      <ul>
-        <li>Developed statistics stream for the reviews</li>
-      </ul>  
-    </td>
-    <td><a href="https://github.com/danylokravchenko/distributed-stream-pipeline">https://github.com/danylokravchenko/distributed-stream-pipeline</a></td>
-  </tr>
-  <tr>
-    <td>The Danish Building and Housing Registry (BBR)</td>
-    <td>Apr 2020 - Aug 2022</td>
-    <td>Full-Stack Developer</td>
-    <td>Vue, ASP.NET, SQL Server, Jenkins, REST</td>
-    <td>
-      <ul>
-        <li>Migrated frontend from AngularJS to Vue</li>
-        <li>Developed reports for governmental employees regarding classified information</li>
+
+      <div class="card-footer">
+        <a href="https://github.com/LukasDS/lds-workout-system" target="_blank" class="btn-link">View on GitHub &rarr;</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="card-header">
+        <h3>Real-time Streaming Pipeline</h3>
+        <span class="date">Apr 2023 - May 2023</span>
+      </div>
+      <p class="role">Role: <strong>Spark Developer</strong></p>
+
+      <div class="tech-tags">
+        <span>Spark (PySpark)</span>
+        <span>Kafka</span>
+        <span>Docker</span>
+      </div>
+
+      <ul class="description">
+        <li>Developed statistics stream for real-time reviews.</li>
+        <li>Orchestrated data flow using Kafka and Docker containers.</li>
+      </ul>
+
+      <div class="card-footer">
+        <a href="https://github.com/danylokravchenko/distributed-stream-pipeline" target="_blank" class="btn-link">View on GitHub &rarr;</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="card-header">
+        <h3>Danish Building Registry (BBR)</h3>
+        <span class="date">Apr 2020 - Aug 2022</span>
+      </div>
+      <p class="role">Role: <strong>Full-Stack Developer</strong></p>
+
+      <div class="tech-tags">
+        <span>Vue</span>
+        <span>ASP.NET</span>
+        <span>SQL Server</span>
+        <span>Jenkins</span>
+      </div>
+
+      <ul class="description">
+        <li>Migrated legacy frontend from AngularJS to Vue.</li>
+        <li>Developed secure reports for classified governmental information.</li>
         <li>Performed statistical analysis on large scale bitemporal SQL data.</li>
-        <li>Designed and developed new full stack workflows for governmental workers</li>
+        <li>Designed new full stack workflows for governmental workers.</li>
       </ul>
-    </td>
-    <td><a href="https://kombit.dk/loesninger/bbr">https://kombit.dk/loesninger/bbr</a></td>
-  </tr>
-  <tr>
-    <td>Danske Bank's OpenId Connect Enclave</td>
-    <td>Feb 2018 - Aug 2018</td>
-    <td>Full-Stack Developer</td>
-    <td>React, ASP.NET Core, Microservices, Jenkins</td>
-    <td>
-      <ul>
-        <li>Developed a React website for OpenID user configuration</li>
-        <li>Developed CI/CD pipelines for deployment of microservices</li>
-        <li>Developed a proof of concept for new HSM modules</li>
-        <li>Introduced Git-Flow branching strategy</li>
+
+      <div class="card-footer">
+        <a href="https://kombit.dk/loesninger/bbr" target="_blank" class="btn-link">View Solution &rarr;</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="card-header">
+        <h3>Danske Bank OpenID Enclave</h3>
+        <span class="date">Feb 2018 - Aug 2018</span>
+      </div>
+      <p class="role">Role: <strong>Full-Stack Developer</strong></p>
+
+      <div class="tech-tags">
+        <span>React</span>
+        <span>ASP.NET Core</span>
+        <span>Microservices</span>
+        <span>Jenkins</span>
+      </div>
+
+      <ul class="description">
+        <li>Developed a React website for OpenID user configuration.</li>
+        <li>Developed CI/CD pipelines for deployment of microservices.</li>
+        <li>Developed a proof of concept for new HSM modules.</li>
+        <li>Introduced Git-Flow branching strategy.</li>
       </ul>
-    </td>
-    <td>Proprietary – details on request</td>
-  </tr>
-</table>
+
+      <div class="card-footer">
+        <span class="private-repo">🔒 Proprietary – details on request</span>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer style="text-align:center; padding: 2rem; color: #666; font-size: 0.9rem;">
+  &copy; 2025 Lukas Daugaard Schröder
+</footer>
+
 </body>
 </html>
