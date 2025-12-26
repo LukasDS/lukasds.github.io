@@ -23,25 +23,31 @@ a:hover {
   margin-bottom: 32px;
   padding: 32px;
   max-width: 850px;
-}
-
-.about-section {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "text image"
+    "tech tech";
+  align-items: start;
+  column-gap: 32px;
 }
 
 .about-text {
-  flex: 1;
+  grid-area: text;
 }
 
 .about-image {
+  grid-area: image;
   width: 160px;
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #007acc;
   background: #f7f9fa;
+}
+
+.tech-stack {
+  grid-area: tech;
 }
 
 .projects-heading {
@@ -94,12 +100,15 @@ td ul {
 
 @media (max-width: 700px) {
   .about-section {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "text"
+      "tech";
     padding: 16px;
   }
   .about-image {
-    margin-top: 16px;
+    margin: 0 auto;
     width: 120px;
     height: 120px;
   }
